@@ -1,8 +1,10 @@
-﻿Console.WriteLine("Ingrese nombre");
+﻿using Humanizer;
+
+Console.WriteLine("Ingrese nombre");
 var nombre = Console.ReadLine();
 Console.WriteLine("Ingrese cargo");
 var cargo = Console.ReadLine();
 Console.WriteLine("Ingrese edad");
 var edad = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"Mi nombre es {nombre}, mi cargo es {cargo} y tengo {edad} años");
+Console.WriteLine($"Mi nombre es {nombre}, mi cargo es {cargo} y tengo {edad.ToWords(new System.Globalization.CultureInfo("es"))} años");
