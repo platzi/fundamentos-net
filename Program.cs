@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Ingrese nombre");
+﻿Console.WriteLine("Ingrese nombre");
 var nombre = Console.ReadLine();
 Console.WriteLine("Ingrese cargo");
 var cargo = Console.ReadLine();
